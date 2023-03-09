@@ -3,3 +3,6 @@ Pada branch html terdapat :
 
 Pada branch css terdapat :
 1. Tugas 1 CSS
+
+Pada branch js terdapat :
+1. Tugas 1 javascript
