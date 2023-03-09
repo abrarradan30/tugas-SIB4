@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Segitiga</title>
+</head>
+<body>
+    <h3> Berikut adalah hasil perhitungan bangun datar segitiga </h3>
+    <hr> 
+</body>
+<script>
+    // diketahui
+    var s = 25;
+    var a = 6;
+    var t = 10;
+    const p = 0.5; // setengah 
+
+    let keliling_segitiga = s + s + s;
+    let luas_segitiga = p * a * t;
+    
+    document.write("diketahui,");
+    document.write("<br>");
+    document.write("sisi = " + s);
+    document.write("<br>");
+    document.write("alas = " + a);
+    document.write("<br>");
+    document.write("tinggi = " + t);
+    document.write("<hr/>");
+
+    // perhitungan keliling segitiga (s + s + s)
+    document.write("Keliling segitiga = " + keliling_segitiga);
+
+    // perhitungan luas segitiga ( 1/2 x alas x tinggi) )
+    document.write("<br>");
+    document.write("Luas segitiga = " + luas_segitiga);
+
+</script>
+</html>
