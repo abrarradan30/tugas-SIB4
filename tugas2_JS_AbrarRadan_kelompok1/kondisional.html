@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>kondisional</title>
+</head>
+<body>
+    <h2>Tugas 2 Javascript "kondisional"</h2>
+    <hr>
+</body>
+<script>
+    var pegawai = "Abrar Radan";
+    var jabatan = "manager";  // bisa diisi manager/asisten manager/satff
+    var status = "belum menikah";  // bisa diisi menikah/belum menikah
+
+
+    if (jabatan == "manager") {
+        gaji_pokok = 10000000;
+    } else if (jabatan == "asisten manager") {
+        gaji_pokok = 8000000;
+    } else if (jabatan == "staff") { 
+        gaji_pokok = 5000000;
+    } else {
+        gaji_pokok = 0;
+    }
+
+    let tunjangan = 0.1 * gaji_pokok; // tunjangan jabatan
+    let bpjs = 0.1 * gaji_pokok; // BPJS
+    
+    let tk = (status == 'menikah') ? 0.1 * gaji_pokok : 0; // tunjangan keluarga bahagia
+
+    let total_gaji = gaji_pokok + tunjangan + bpjs + tk; // total seluruh pendapatan atau penghasilan
+
+    document.write("Nama pegawai : " + pegawai +
+    "<br> Jabatan : " + jabatan +
+    "<br> Status : " + status +
+    "<br> Gaji pokok : " + gaji_pokok +
+    "<br> Tunjangan jabatan : " + tunjangan +
+    "<br> BPJS : " + bpjs + 
+    "<br> Tunjangan keluarga : " + tk + 
+    "<br> Total gaji : " + total_gaji 
+    );
+ 
+</script>
+</html>
