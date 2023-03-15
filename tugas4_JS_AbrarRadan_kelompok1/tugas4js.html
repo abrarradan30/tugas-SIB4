@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalkulator</title>
+    <style>
+        body {
+            background-image: url("math.jpg");
+            width: 30%;
+        }
+        table {
+            margin-top: 150px;
+            margin-left: 550px;
+            text-align: center;
+            width: 80%;
+            border: 3px solid #7FFF00;
+            border-collapse: collapse;
+            font-size: 20px;
+            }
+        th,td {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: 3px solid #7FFF00;
+            border-collapse: collapse;
+        }
+        #head {
+            background-color: #6495ED;
+        }
+        .isi {
+            background-color: #E6E6FA;
+        }
+        .isi2 {
+            background-color: #48D1CC;
+        }
+        .simbol {
+            font-size: 20px;
+        }
+        .simbol2 {
+            font-size: 12px;
+            font-weight: bold;
+            width: 200px;
+        }
+        #cop {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <form id="kalkulator">
+        <table>
+            <tr>
+                <th colspan="3" id="head">Simple Calculator</th>
+            </tr>
+            <tr class="isi">
+                <th> Angka 1 </th>
+                <td colspan="2"> <input type="text" name="angka" placeholder="masukan angka 1"> </td>
+            </tr>
+            <tr class="isi">
+                <th> Angka 2 </th>
+                <td colspan="2"> <input type="text" name="angka2" placeholder="masukan angka 2"> </td>
+            </tr>
+            <tr class="isi">
+                <td colspan="2"> <button type="button" name="btn_tambah" onclick="tambah()" class="simbol"> + </button> </td>
+                <td> <button type="button" name="btn_kurang" onclick="kurang()" class="simbol"> - </button> </td>
+            </tr>
+            <tr class="isi">
+                <td> <button type="button" name="btn_bagi" onclick="bagi()" class="simbol"> &#247; </button> </td>
+                <td> <button type="button" name="btn_kali" onclick="kali()" class="simbol"> x </button> </td>
+                <td> <button type="button" name="btn_pangkat" onclick="pangkat()" class="simbol"> ^ </button> </td>
+            </tr>
+            <tr class="isi2">
+                <th> Hasil </th>
+                <td colspan="2"> <input type="text" name="hasil" style="text-align: center;" class="simbol2" disabled> </td>
+            </tr>
+            <tr>
+                <td colspan="3" bgcolor="#778899" id="cop"> by &#169; AbrarRadan</td>
+            </tr>
+        <table>
+    </form>
+    <script src="kalkulator.js"></script>
+</body>
+</html>
