@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 6</title>
+    <script src="js/jquery-3.6.4.js"></script>
+    <style>
+        tr, td {
+            border-style: solid;
+        }
+        #button {
+            background-color: #4590c6;      
+            padding: 10px 15px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h3 align="center"> Klik salah satu gambar di bawah ini !</h3>
+    <hr>
+    <table align="center">
+        <tr>
+            <td> <img src="img/boi.jpg" class="hide"> </td>
+            <td> <img src="img/boi_angin.jpg" class="hide"> </td>
+        </tr>
+        <tr>
+            <td> <img src="img/boi_gempa.jpg" class="hide">  </td>
+            <td> <img src="img/boi_petir.jpg" class="hide"> </td>
+        </tr>
+    </table>
+    <hr>
+    <button id="button"> <a href="tugas6jquery.html"> Reload </a></button>
+    <script>
+        $(document).ready(function(){
+            $('.hide').click(function () {
+                $('.hide').slice(0,4).hide();
+            });
+        });
+    </script>
+</body>
+</html>
