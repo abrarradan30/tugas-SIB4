@@ -8,4 +8,4 @@ Pada branch js terdapat :
 1. Tugas 1,2,3,4,5,6 javascript
 
 Pada branch php terdapat :
-1. Tugas 1,2 php
+1. Tugas 1,2,3,4 php
