@@ -1,2 +1,2 @@
 # tugas-SIB4-PTHTP
-Repository untuk tugas SIB 4 di PT HTP
+Repository untuk tugas SIB 4 - PT HTP
